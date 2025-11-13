@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #ff7043;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+/* Section Titles */
+h2 {
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+/* Restaurant Card */
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px; /* Medium size for all restaurant images */
+  object-fit: cover;
+}
+
+.restaurant-card h3 {
+  margin: 10px 0 5px 0;
+  color: #ff5722;
+}
+
+.restaurant-card p {
+  margin: 0 10px 10px 10px;
+  font-size: 14px;
+}
+
+/* Menu Section */
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 13px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100px; /* Medium size for all menu images */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.menu-item button, .menu-item .fav-btn {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.menu-item button:hover, .menu-item .fav-btn:hover {
+  background-color: #ff5722;
+}
+
+/* Favorites Section */
+#favorites-list p {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+#favorites-list .menu-item {
+  position: relative;
+}
+
+#favorites-list .menu-item .fav-btn {
+  background-color: #ff4081;
+}
+
+#favorites-list .menu-item .fav-btn:hover {
+  background-color: #f50057;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
